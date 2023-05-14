@@ -1,0 +1,32 @@
+Jawablah pertanyaan di bawah ini dan simpan jawaban dengan nama NIM_Rehashing.txt
+a) Mengapa dilakukan rehashing?
+b) Kapan rehashing dilakukan berdasarkan gambar di atas?
+c) Sebutkan langkah-langkah melakukan rehashing secara singkat, padat, dan jelas!
+d) Jelaskan secara singkat apa itu Sieve of Erathosthenes dalam 1 kalimat!
+e) Apakah size yang baru harus mengikuti bilangan prima?
+
+Jawab :
+a) Rehashing dilakukan untuk memperbesar ukuran tabel hash ketika kapasitasnya hampir mencapai batas maksimum, 
+   sehingga dapat menghindari terjadinya tabrakan (collision) yang dapat mengurangi efisiensi pencarian pada tabel hash.
+   
+b) Rehashing dilakukan ketika kapasitas tabel hash mencapai 70% dari ukuran tabel hash saat ini.
+
+c) Langkah-langkah melakukan rehashing adalah:
+    1. Membuat sebuah array sementara (arrTemp) yang akan menyimpan nilai-nilai yang ada pada hash table yang sudah terisi.
+    2. Menghapus hash table lama (dengan menggunakan fungsi free()).
+    3. Mengalikan ukuran hash table yang baru menjadi dua kali lipat dari ukuran hash table yang lama.
+    4. Memeriksa apakah ukuran hash table yang baru merupakan bilangan prima yang lebih besar dari ukuran hash table yang lama.
+    5. Jika iya, maka ukuran hash table yang baru dijadikan bilangan prima tersebut. 
+       Jika tidak, cari bilangan prima terdekat yang lebih besar dari ukuran hash table yang baru.
+    6. Membuat hash table yang baru dengan ukuran yang sudah ditentukan dan menginisialisasikan semua nilai 
+       pada hash table dengan nilai -1.
+    7. Memasukkan kembali semua nilai yang ada pada array sementara (arrTemp) ke dalam hash table yang baru. 
+       Nilai-nilai tersebut dimasukkan ke dalam hash table yang baru dengan cara menghitung hash code-nya dan 
+       menempatkan nilai tersebut pada posisi hash code tersebut. Jika posisi tersebut sudah terisi, 
+       maka hash code akan ditambah 1 dan dicoba lagi hingga ditemukan posisi yang kosong.
+
+d) Sieve of Eratosthenes adalah sebuah algoritma matematika yang digunakan untuk menemukan 
+   semua bilangan prima dalam suatu rentang bilangan tertentu.
+
+e) Tidak, size yang baru tidak harus mengikuti bilangan prima, tetapi algoritma yang digunakan dalam program 
+   tersebut memilih bilangan prima sebagai ukuran tabel hash baru.
