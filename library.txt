@@ -1,0 +1,6 @@
+Laskar Pelangi,Andrea Hirata,2005,Bentang Pustaka,Novel,
+Harry Potter,JK Rowling,1997,Bloomsbury,Fantasy,
+A Game of Thrones,George R,1996,Bantam Books,Fantasy,
+Chainsaw Man,Tatsuki Fujimoto,2018,Shueisha,Action,
+Spy X Family,Tatsuya Endo,2019,Shueisha,Komedi,
+Kisah Hidup gwe,Feivel,2003,Riwayat,Slice of Life,
